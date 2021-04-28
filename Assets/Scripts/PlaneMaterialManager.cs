@@ -7,6 +7,7 @@ public class PlaneMaterialManager : MonoBehaviour
 {
     public Material planeMaterial;
     public Button[] planeTextureButtons;
+    public Button[] ModelButtons;
 
     void Awake() {
         foreach (var button in planeTextureButtons) {

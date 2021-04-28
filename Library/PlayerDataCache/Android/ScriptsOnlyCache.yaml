@@ -1,7 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - DataHandler
     - InputManager
+    - ModelButtonManager
     - PlaneMaterialManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -18,8 +20,6 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.ARFoundation.ARRaycastManager
     - UnityEngine.XR.ARFoundation.ARSession
     - UnityEngine.XR.ARFoundation.ARSessionOrigin
-    Unity.XR.ARKit.Editor.dll:
-    - UnityEditor.XR.ARKit.ARKitSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -83,31 +83,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12674}
     - Class: 114
-      Script: {instanceID: 12938}
+      Script: {instanceID: 12708}
     - Class: 114
-      Script: {instanceID: 12950}
+      Script: {instanceID: 12940}
     - Class: 114
-      Script: {instanceID: 13312}
+      Script: {instanceID: 12952}
     - Class: 114
-      Script: {instanceID: 13342}
+      Script: {instanceID: 13314}
     - Class: 114
-      Script: {instanceID: 13614}
+      Script: {instanceID: 13344}
     - Class: 114
-      Script: {instanceID: 13624}
+      Script: {instanceID: 13616}
     - Class: 114
-      Script: {instanceID: 13848}
+      Script: {instanceID: 13626}
     - Class: 114
-      Script: {instanceID: 13988}
+      Script: {instanceID: 13850}
     - Class: 114
-      Script: {instanceID: 14020}
+      Script: {instanceID: 13990}
     - Class: 114
-      Script: {instanceID: 14222}
+      Script: {instanceID: 14022}
     - Class: 114
-      Script: {instanceID: 14368}
+      Script: {instanceID: 14224}
     - Class: 114
-      Script: {instanceID: 14490}
+      Script: {instanceID: 14370}
     - Class: 114
-      Script: {instanceID: 16242}
+      Script: {instanceID: 14492}
+    - Class: 114
+      Script: {instanceID: 15182}
+    - Class: 114
+      Script: {instanceID: 15222}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -365,6 +369,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 7271b537c807b35afa7b09c6822daf8b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InputManager
+  - hash:
+      serializedVersion: 2
       Hash: 5cc439bf63c0539d39588e69465ac2ab
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -419,7 +429,7 @@ ScriptsOnlyBuild:
     className: ARKitLoader
   - hash:
       serializedVersion: 2
-      Hash: a27e44c7b0c0dcc06d4707dd51536c08
+      Hash: 4fb58bfd74b136801e75de4a7be20cc8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlaneMaterialManager
@@ -791,10 +801,16 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 43eca4682692a52a0f0a4c3dcf129003
+      Hash: aa645c8609ec544df7a3851e9b0faec0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: InputManager
+    className: ModelButtonManager
+  - hash:
+      serializedVersion: 2
+      Hash: aa645c8609ec544df7a3851e9b0faec0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DataHandler
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
