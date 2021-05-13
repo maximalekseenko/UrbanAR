@@ -58,9 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\InputManager.cs" />
     <Compile Include="Assets\Scripts\PlaneMaterialManager.cs" />
-    <Compile Include="Assets\Scripts\BtnFastAFScripr.cs" />
-    <Compile Include="Assets\Scripts\DataHandler.cs" />
-    <Compile Include="Assets\Scripts\ModelButtonManager.cs" />
+    <Compile Include="Assets\Scripts\DataManager.cs" />
+    <Compile Include="Assets\Scripts\ButtonManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -9,13 +9,15 @@ public class InputManager : MonoBehaviour
     [SerializeField] private Camera arCamera;
     [SerializeField] private ARRaycastManager raycastManager;
 
+
+    GameObject SpawnedModel=new GameObject();
+
+
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
-
     Touch touch;
-
-
     void Update()
     {
+        Debug.Log(DataManager.Instance.model);
         touch = Input.GetTouch(0);
 
         if (Input.touchCount < 0 || touch.phase != TouchPhase.Began) 
@@ -27,9 +29,11 @@ public class InputManager : MonoBehaviour
         if (raycastManager.Raycast(ray, hits))
         {
             Pose pose = hits[0].pose;
-            Instantiate(DataHandler.Instance.furniture, pose.position, pose.rotation);
+            Destroy(SpawnedModel);
+            SpawnedModel =Instantiate(DataManager.Instance.model, pose.position, pose.rotation);
         }
     }
+
     bool IsPointerOverUI(Touch touch)
     {
         PointerEventData eventData = new PointerEventData(EventSystem.current);
