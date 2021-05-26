@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637558849457743488
-    m_Hash: 1439953223
+      ticks: 637576338495113384
+    m_Hash: 4239120933
   m_LockFileStatus:
     m_FilePath: C:/Users/Max/Desktop/URBANAR/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637558849457753478
-    m_Hash: 2155712620
+      ticks: 637576338495183313
+    m_Hash: 633919129
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -116,111 +116,6 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
         revision: fa825106f349f996acff22f718845eab46ca2d7c
         path: 
-    - packageId: com.unity.ide.rider@1.2.1
-      testable: 0
-      isDirectDependency: 1
-      version: 1.2.1
-      source: 1
-      resolvedPath: C:\Users\Max\Desktop\URBANAR\Library\PackageCache\com.unity.ide.rider@1.2.1
-      assetPath: Packages/com.unity.ide.rider
-      name: com.unity.ide.rider
-      displayName: JetBrains Rider Editor
-      author:
-        name: 
-        email: 
-        url: 
-      category: 
-      type: 
-      description: Code editor integration for supporting JetBrains Rider as code
-        editor for unity. Adds support for generating csproj files for code completion,
-        auto discovery of installations, etc.
-      status: 4
-      errors: []
-      versions:
-        all:
-        - 1.0.2
-        - 1.0.6
-        - 1.0.8
-        - 1.1.0
-        - 1.1.1
-        - 1.1.2-preview
-        - 1.1.2-preview.2
-        - 1.1.3-preview.1
-        - 1.1.4-preview
-        - 1.1.4
-        - 1.2.0-preview
-        - 1.2.1
-        - 2.0.0-preview
-        - 2.0.1
-        - 2.0.2
-        - 2.0.3
-        - 2.0.5
-        - 2.0.7
-        - 3.0.1
-        - 3.0.2
-        - 3.0.3
-        - 3.0.4
-        - 3.0.5
-        - 3.0.6
-        compatible:
-        - 1.0.2
-        - 1.0.6
-        - 1.0.8
-        - 1.1.0
-        - 1.1.1
-        - 1.1.2-preview
-        - 1.1.2-preview.2
-        - 1.1.3-preview.1
-        - 1.1.4-preview
-        - 1.1.4
-        - 1.2.0-preview
-        - 1.2.1
-        - 2.0.0-preview
-        - 2.0.1
-        - 2.0.2
-        - 2.0.3
-        - 2.0.5
-        - 2.0.7
-        - 3.0.1
-        - 3.0.2
-        - 3.0.3
-        - 3.0.4
-        - 3.0.5
-        - 3.0.6
-        verified: 1.2.1
-      dependencies:
-      - name: com.unity.test-framework
-        version: 1.1.1
-      resolvedDependencies:
-      - name: com.unity.test-framework
-        version: 1.1.18
-      - name: com.unity.ext.nunit
-        version: 1.0.0
-      - name: com.unity.modules.imgui
-        version: 1.0.0
-      - name: com.unity.modules.jsonserialize
-        version: 1.0.0
-      keywords: []
-      registry:
-        id: main
-        name: 
-        url: https://packages.unity.com
-        scopes: []
-        isDefault: 1
-        capabilities: 7
-      hasRegistry: 1
-      hideInEditor: 1
-      entitlements:
-        isAllowed: 1
-      isAssetStorePackage: 0
-      datePublishedTicks: 637123753810000000
-      documentationUrl: 
-      hasRepository: 1
-      repository:
-        type: git
-        url: git@github.cds.internal.unity3d.com:unity/com.unity.ide.rider.git
-        revision: 009bcadf1eb16d9bbf3d00bcf6ccdde2162ce0cb
-        path: 
     - packageId: com.unity.ide.visualstudio@2.0.3
       testable: 0
       isDirectDependency: 1
@@ -255,6 +150,7 @@ m_PackageAssets:
         - 2.0.3
         - 2.0.5
         - 2.0.7
+        - 2.0.8
         compatible:
         - 1.0.2
         - 1.0.3
@@ -268,7 +164,8 @@ m_PackageAssets:
         - 2.0.3
         - 2.0.5
         - 2.0.7
-        verified: 2.0.7
+        - 2.0.8
+        verified: 2.0.8
       dependencies: []
       resolvedDependencies: []
       keywords: []
@@ -360,6 +257,118 @@ m_PackageAssets:
         type: git
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.vscode.git
         revision: b5ec9b38109e52b1b26597d521e4df75e042ebb9
+        path: 
+    - packageId: com.unity.mobile.notifications@1.0.3
+      testable: 0
+      isDirectDependency: 1
+      version: 1.0.3
+      source: 1
+      resolvedPath: C:\Users\Max\Desktop\URBANAR\Library\PackageCache\com.unity.mobile.notifications@1.0.3
+      assetPath: Packages/com.unity.mobile.notifications
+      name: com.unity.mobile.notifications
+      displayName: Mobile Notifications
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'Mobile Notifications package adds support for scheduling local
+        repeatable or one-time notifications on iOS and Android.
+
+
+        Requires
+        iOS 10 and Android 4.4 or above.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0-preview.4
+        - 1.0.0-preview.5
+        - 1.0.0-preview.7
+        - 1.0.0-preview.8
+        - 1.0.0-preview.9
+        - 1.0.0-preview.10
+        - 1.0.0-preview.13
+        - 1.0.0-preview.17
+        - 1.0.0-preview.21
+        - 1.0.0-preview.23
+        - 1.0.2
+        - 1.0.3-preview
+        - 1.0.3-preview.3
+        - 1.0.3-preview.4
+        - 1.0.3-preview.5
+        - 1.0.3-preview.6
+        - 1.0.3
+        - 1.0.4-preview.1
+        - 1.0.4-preview.2
+        - 1.0.4-preview.3
+        - 1.0.4-preview.4
+        - 1.0.4-preview.5
+        - 1.0.4-preview.6
+        - 1.0.4-preview.9
+        - 1.1.0-preview
+        - 1.2.0-preview
+        - 1.2.1-preview
+        - 1.3.0
+        - 1.3.2
+        compatible:
+        - 1.0.0-preview.4
+        - 1.0.0-preview.5
+        - 1.0.0-preview.7
+        - 1.0.0-preview.8
+        - 1.0.0-preview.9
+        - 1.0.0-preview.10
+        - 1.0.0-preview.13
+        - 1.0.0-preview.17
+        - 1.0.0-preview.21
+        - 1.0.0-preview.23
+        - 1.0.2
+        - 1.0.3-preview
+        - 1.0.3-preview.3
+        - 1.0.3-preview.4
+        - 1.0.3-preview.5
+        - 1.0.3-preview.6
+        - 1.0.3
+        - 1.0.4-preview.1
+        - 1.0.4-preview.2
+        - 1.0.4-preview.3
+        - 1.0.4-preview.4
+        - 1.0.4-preview.5
+        - 1.0.4-preview.6
+        - 1.0.4-preview.9
+        - 1.1.0-preview
+        - 1.2.0-preview
+        - 1.2.1-preview
+        - 1.3.0
+        - 1.3.2
+        verified: 1.0.3
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - Android
+      - iOS
+      - Notifications
+      - Mobile
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637020793450000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: git@github.cds.internal.unity3d.com:pauliusp/mobile-notifications.git
+        revision: b112527077823bcfc0e9c0a58ae882949e64eb46
         path: 
     - packageId: com.unity.test-framework@1.1.18
       testable: 0
@@ -678,6 +687,7 @@ m_PackageAssets:
         - 1.4.5
         - 1.4.6
         - 1.4.7
+        - 1.4.8
         - 1.5.0-pre.2
         - 1.5.0-preview.1
         - 1.5.0-preview.2
@@ -689,8 +699,11 @@ m_PackageAssets:
         - 1.5.1-pre.3
         - 1.5.2
         - 1.5.4
+        - 1.5.5
         - 1.6.0-pre.1
         - 1.6.0-pre.3
+        - 1.6.0-pre.4
+        - 1.6.0-pre.5
         compatible:
         - 1.2.6
         - 1.2.7
@@ -731,6 +744,7 @@ m_PackageAssets:
         - 1.4.5
         - 1.4.6
         - 1.4.7
+        - 1.4.8
         - 1.5.0-pre.2
         - 1.5.0-preview.1
         - 1.5.0-preview.2
@@ -742,8 +756,11 @@ m_PackageAssets:
         - 1.5.1-pre.3
         - 1.5.2
         - 1.5.4
+        - 1.5.5
         - 1.6.0-pre.1
         - 1.6.0-pre.3
+        - 1.6.0-pre.4
+        - 1.6.0-pre.5
         verified: 1.3.7
       dependencies: []
       resolvedDependencies: []
@@ -933,6 +950,8 @@ m_PackageAssets:
         - 4.2.0-pre.3
         - 4.2.0-pre.4
         - 4.2.0-pre.5
+        - 4.2.0-pre.7
+        - 4.2.0-pre.8
         compatible:
         - 1.0.0-preview.24
         - 2.0.2
@@ -1131,6 +1150,8 @@ m_PackageAssets:
         - 4.2.0-pre.3
         - 4.2.0-pre.4
         - 4.2.0-pre.5
+        - 4.2.0-pre.7
+        - 4.2.0-pre.8
         compatible:
         - 1.0.0-preview.12
         - 1.0.0-preview.13
@@ -1344,6 +1365,8 @@ m_PackageAssets:
         - 4.2.0-pre.2
         - 4.2.0-pre.3
         - 4.2.0-pre.4
+        - 4.2.0-pre.7
+        - 4.2.0-pre.8
         compatible:
         - 1.0.0-preview.11
         - 1.0.0-preview.12
@@ -3271,6 +3294,8 @@ m_PackageAssets:
         - 4.2.0-pre.3
         - 4.2.0-pre.4
         - 4.2.0-pre.5
+        - 4.2.0-pre.7
+        - 4.2.0-pre.8
         compatible:
         - 3.1.3
         - 3.1.5
@@ -3392,6 +3417,7 @@ m_PackageAssets:
         - 4.0.0-pre.3
         - 4.0.1
         - 4.0.3
+        - 4.0.5
         compatible:
         - 3.2.16
         - 3.2.17
@@ -3400,6 +3426,7 @@ m_PackageAssets:
         - 4.0.0-pre.3
         - 4.0.1
         - 4.0.3
+        - 4.0.5
         verified: 3.2.17
       dependencies:
       - name: com.unity.xr.legacyinputhelpers

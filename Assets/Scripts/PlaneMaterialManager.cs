@@ -15,10 +15,7 @@ public class PlaneMaterialManager : MonoBehaviour
             button.onClick.AddListener(()=>OnClickButton(texture));
         }
     }
-
-    void Update(){
-        
-    }
+    
 
     void OnClickButton(Texture texture) {
         planeMaterial.mainTexture = texture;

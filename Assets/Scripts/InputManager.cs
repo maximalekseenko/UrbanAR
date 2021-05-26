@@ -10,14 +10,17 @@ public class InputManager : MonoBehaviour
     [SerializeField] private ARRaycastManager raycastManager;
 
 
-    GameObject SpawnedModel=new GameObject();
+    GameObject SpawnedModel;
 
+    private void Awake()
+    {
+        SpawnedModel = new GameObject();
+    }
 
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
     Touch touch;
     void Update()
     {
-        Debug.Log(DataManager.Instance.model);
         touch = Input.GetTouch(0);
 
         if (Input.touchCount < 0 || touch.phase != TouchPhase.Began) 
