@@ -23,8 +23,8 @@ public class ButtonManager : MonoBehaviour
     public void Btn_SelectModel(GameObject prefab) { DataManager.Instance.model = prefab; }
     public void Btn_Screenshot()
     {
-        int resWidth = 480;
-        int resHeight = 800;
+        int resWidth = Screen.width; ;
+        int resHeight = Screen.height;
 
         //Take sceenshot
         try
