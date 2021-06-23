@@ -5,21 +5,26 @@ using UnityEngine;
 
 public class ButtonManager : MonoBehaviour
 {
+    [SerializeField] private GameObject HomeHolder;
     [SerializeField] private GameObject FloorsHolder;
     [SerializeField] private GameObject ModelsHolder;
-    [SerializeField] private GameObject HomeHolder;
+    [SerializeField] private GameObject InfoHolder;
 
-    private void ShowHolder(string holderName)
+    public void ShowHolder(string holderName)
     {
+        // HomeHolder.SetActive(false);
         ModelsHolder.SetActive(false);
         FloorsHolder.SetActive(false);
-        HomeHolder.SetActive(false);
-        if (holderName == "ModelsHolder") ModelsHolder.SetActive(true);
-        if (holderName == "FloorsHolder") FloorsHolder.SetActive(true);
-        if (holderName == "HomeHolder") HomeHolder.SetActive(true);
+        InfoHolder.SetActive(false);
+        
+        if (holderName == "Home") HomeHolder.SetActive(true);
+        if (holderName == "Floors") FloorsHolder.SetActive(true);
+        if (holderName == "Models") ModelsHolder.SetActive(true);
+        if (holderName == "Info") InfoHolder.SetActive(true);
     }
-    public void Btn_ShowModels() { ShowHolder("ModelsHolder"); }
-    public void Btn_HideModels() { ShowHolder("HomeHolder"); }
+    public void Btn_ShowModels() { ShowHolder("Models"); }
+    public void Btn_ShowHome() { ShowHolder("Home"); }
+    public void Btn_ShowInfo() { ShowHolder("Info"); }
     public void Btn_SelectModel(GameObject prefab) { DataManager.Instance.model = prefab; }
     public void Btn_Screenshot()
     {
