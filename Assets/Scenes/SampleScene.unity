@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 223974229}
   - component: {fileID: 223974231}
   - component: {fileID: 223974230}
+  - component: {fileID: 223974227}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -142,6 +143,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &223974227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 223974226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6add24983a4254818984938bf0a47bcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HomeHolder: {fileID: 1114040580}
+  ModelsHolder: {fileID: 1987830119}
+  InfoHolder: {fileID: 1601391509}
 --- !u!4 &223974228
 Transform:
   m_ObjectHideFlags: 0
@@ -182,10 +198,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39cadbfa952a0544f980ea168606b3aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debug: {fileID: 0}
+  buttonPrefab: {fileID: 0}
+  buttonContainer: {fileID: 0}
+  items: []
   camera: {fileID: 848230122}
   model: {fileID: 0}
-  arSession: {fileID: 1309444774}
 --- !u!114 &223974231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,9 +215,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aabea65c88c39047ae7584515e79dbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HomeHolder: {fileID: 1114040580}
-  ModelsHolder: {fileID: 1987830119}
-  InfoHolder: {fileID: 1601391509}
 --- !u!1 &225398834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,8 +1017,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 223974231}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+      - m_Target: {fileID: 223974227}
+        m_TargetAssemblyTypeName: HolderManager, Assembly-CSharp
         m_MethodName: ShowHolder
         m_Mode: 5
         m_Arguments:
@@ -1182,8 +1196,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 223974231}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+      - m_Target: {fileID: 223974227}
+        m_TargetAssemblyTypeName: HolderManager, Assembly-CSharp
         m_MethodName: ShowHolder
         m_Mode: 5
         m_Arguments:
@@ -1884,25 +1898,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 223974231}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
-        m_MethodName: Btn_Screenshot
+      - m_Target: {fileID: 223974230}
+        m_TargetAssemblyTypeName: DataManager, Assembly-CSharp
+        m_MethodName: MakeScreenshot
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1309444774}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2716,8 +2718,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 223974231}
-        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+      - m_Target: {fileID: 223974227}
+        m_TargetAssemblyTypeName: HolderManager, Assembly-CSharp
         m_MethodName: ShowHolder
         m_Mode: 5
         m_Arguments:
