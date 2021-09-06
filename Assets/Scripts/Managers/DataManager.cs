@@ -12,11 +12,6 @@ public class DataManager : MonoBehaviour
     public static DataManager Instance {get {if (instance == null) instance = FindObjectOfType<DataManager>(); return instance;}}
     
 
-    /* Button manage variables */
-    [SerializeField] private ButtonManager buttonPrefab;
-    [SerializeField] private GameObject buttonContainer;
-    [SerializeField] private List<Item> items;
-
     /* Public variables */
     public Camera camera;
     public GameObject model;
@@ -85,11 +80,4 @@ public class DataManager : MonoBehaviour
         catch { }
     }
 
-    void addButton()
-    {
-        foreach (Item i in items)
-        {
-            ButtonManager b = Instantiate(buttonPrefab, buttonContainer.transform);
-        }
-    }
 }
