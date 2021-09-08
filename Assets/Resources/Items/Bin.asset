@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5834b5087d578d24c926ce20cd31e6d6, type: 3}
-  m_Name: Default Local Group_ContentUpdateGroupSchema
+  m_Script: {fileID: 11500000, guid: f0879bd755cd44cd4bad0b283978eac1, type: 3}
+  m_Name: Bin
   m_EditorClassIdentifier: 
-  m_Group: {fileID: 11400000, guid: 08bf3946aa8154575b8ec78de613739a, type: 2}
-  m_StaticContent: 0
+  ItemModel: {fileID: 7566571797535809791, guid: 0f7e4afe7e85a114cab50f564c50ffcf, type: 3}
+  ItemSprite: {fileID: 21300000, guid: 10692b08a91eae140aeeb3d299a90f82, type: 3}

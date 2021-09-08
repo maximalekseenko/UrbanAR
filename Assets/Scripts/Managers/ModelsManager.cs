@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
+using UnityEngine.UI;
 
 public class ModelsManager : MonoBehaviour
 {
@@ -13,33 +12,19 @@ public class ModelsManager : MonoBehaviour
 
     [SerializeField] private GameObject buttonPrefab;
     [SerializeField] private GameObject buttonContainer;
-    [SerializeField] private List<Item> items;
-    [SerializeField] private string label;
 
 
-    async void Start()
+    void Start()
     {
-        items = new List<Item>();
-        await Get(label );
-        CreateButton();
-    }
-    void CreateButton()
-    {
-        foreach (Item i in items)
+        foreach (Item item in Resources.LoadAll("Items",typeof(Item)))
         {
-            ButtonManager b = Instantiate(buttonPrefab, buttonContainer.transform);
-
+            GameObject b = Instantiate(buttonPrefab, buttonContainer.transform);
+            b.GetComponent<Image>().sprite = item.ItemSprite;
+            b.GetComponent<Button>().onClick.AddListener(()=>
+            {
+                DataManager.Instance.model=item.ItemModel;
+                HolderManager.Instance.ShowHolder("Home");
+            });
         }
-    }
-
-    public Task Get(string label)
-    {
-        var locations = await Addressables.LoadResourceLocationsAsync(label).Task;
-        foreach (var location in locations)
-        {
-            var item = await Addressables.LoadAssetAsync<Item>(location).Task;
-            items.Add(item);
-        }
-        return null;
     }
 }
