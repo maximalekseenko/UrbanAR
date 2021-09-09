@@ -201,6 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 848230122}
   model: {fileID: 0}
+  arSession: {fileID: 1958707682}
 --- !u!114 &223974231
 MonoBehaviour:
   m_ObjectHideFlags: 0
