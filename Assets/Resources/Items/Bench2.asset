@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0879bd755cd44cd4bad0b283978eac1, type: 3}
   m_Name: Bench2
   m_EditorClassIdentifier: 
-  ItemModel: {fileID: 919132149155446097, guid: 49e5a5c269c0943dcaf367f263def7dc, type: 3}
+  ItemModel: {fileID: 4970395083243173219, guid: c10887fcbdb5c427ea683fdaa9908f63, type: 3}
   ItemSprite: {fileID: 0}

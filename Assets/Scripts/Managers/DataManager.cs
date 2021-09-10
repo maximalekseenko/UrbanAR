@@ -16,19 +16,19 @@ public class DataManager : MonoBehaviour
     public Camera camera;
     public GameObject model;
     
-    /* plane visibility */
-    public GameObject arSession;
-    private bool m_PlaneVisible = false;
-    public void SetAllPlanesActive() 
-    {
-        m_PlaneVisible = !m_PlaneVisible;
-    }
-    void Update() 
-    {
-        foreach (var plane in arSession.GetComponent<ARPlaneManager>().trackables) {
-            plane.gameObject.SetActive(m_PlaneVisible);
-        }
-    }
+    // /* plane visibility */
+    // public GameObject arSession;
+    // private bool m_PlaneVisible = false;
+    // public void SetAllPlanesActive() 
+    // {
+    //     m_PlaneVisible = !m_PlaneVisible;
+    // }
+    // void Update() 
+    // {
+    //     foreach (var plane in arSession.GetComponent<ARPlaneManager>().trackables) {
+    //         plane.gameObject.SetActive(m_PlaneVisible);
+    //     }
+    // }
 
     void Start() 
     {
@@ -48,7 +48,7 @@ public class DataManager : MonoBehaviour
         {
 
             /* Variables declare */
-            SetAllPlanesActive();
+            // SetAllPlanesActive();
             int resWidth = Screen.width;
             int resHeight = Screen.height;
             RenderTexture rt = new RenderTexture(resWidth, resHeight, 24);
@@ -63,7 +63,7 @@ public class DataManager : MonoBehaviour
             byte[] mediaBytes = screenShot.EncodeToPNG();
 
             /* Variables cleanse */
-            SetAllPlanesActive();
+            // SetAllPlanesActive();
             RenderTexture.active = null;
             Destroy(rt);
 
