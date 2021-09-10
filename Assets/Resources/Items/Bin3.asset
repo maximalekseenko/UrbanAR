@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Bin3
   m_EditorClassIdentifier: 
   ItemModel: {fileID: 1220744652361539209, guid: c8d1c7b978c8a4eaebe119fcfd4ad110, type: 3}
-  ItemSprite: {fileID: 0}
+  ItemSprite: {fileID: 21300000, guid: 051779918cdc749c19bfc454d407b2b6, type: 3}
