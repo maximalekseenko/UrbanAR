@@ -200,8 +200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 848230122}
-  model: {fileID: 0}
-  arSession: {fileID: 1958707682}
+  model: {fileID: 4970395083243173219, guid: 6acc2e77355334fce91c6e882a5c328e, type: 3}
 --- !u!114 &223974231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,7 +483,7 @@ GameObject:
   - component: {fileID: 408388641}
   - component: {fileID: 408388640}
   m_Layer: 5
-  m_Name: ShowModels
+  m_Name: ShowHome
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -562,7 +561,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Models
+          m_StringArgument: Home
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &408388641
